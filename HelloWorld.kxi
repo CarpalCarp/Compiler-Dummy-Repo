@@ -1,0 +1,35 @@
+class Hello{
+    private char[] message = new char[13];
+	private bool sayBye = false;
+    Hello(){
+	    this.message[0] = 'H';
+	    this.message[1] = 'e';
+	    this.message[2] = 'l';
+	    this.message[3] = 'l';
+	    this.message[4] = 'o';
+	    this.message[5] = ' ';
+	    this.message[6] = 'W';
+	    this.message[7] = 'o';
+	    this.message[8] = 'r';
+	    this.message[9] = 'l';
+	    this.message[10] = 'd';
+	    this.message[11] = '!';
+	    this.message[11] = '\n';
+    }
+	public void sayHello(){
+		int count = 0;
+		while(count < 13){
+			cout << this.message[count];
+			count = count + 1;
+		}
+		
+		if(sayBye == true){
+			sayByeMessage(); // error here since sayByeMessage() is not defined
+		}
+	}
+}
+
+void kxi2020 main(){
+	Hello hello = new Hello();
+	hello.sayHello();
+}
