@@ -11,10 +11,10 @@ Read a file line by line and tokenize the input. I created an API which uses fun
 ## Syntax Analysis
 As each line is read in the kxi file, make sure the code follows the grammar provided by the language. If an error is found, the Compiler stops running and displays the line number and a specific error message to the user. A symbol table gets created with token information that is used for the next phase. Once the entire file is read and no errors are found, the Compiler will do a second pass read.
 
+Note: Switch statements are included in the grammar for error checking but they stop at this phase which means they won't get executed since there is no assembly written for them.
+
 ## Semantic Analysis
 As each line is read in the kxi file during the second pass, Compiler checks for type checking, flow of control, uninitialized variables, duplicate names for variables, arrays, objects, etc. If errors are found, the Compiler stops and outputs to the console the line number the error was found and a specific message.
-
-Note: Switch statements are included in the grammar for error checking but they stop at this phase which means they won't get executed since there is no assembly written for them.
 
 ## Intermediate Code Generation
 To help make the final phase easier, a quad table is created with intermediate assembly code. The quad table helps with creating labels for assembly branch statements which are used for while loops and if statements.
