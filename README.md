@@ -46,5 +46,8 @@ There is no typeOfBark() method in the Bark class
 ## Intermediate Code Generation
 To help make the final phase easier, a quad table is created with intermediate assembly code. The quad table helps with creating labels for assembly branch statements which are used for while loops and if statements.
 
+Here is what the Quad table looks like:
+![GitHub Logo](QuadTableEx.PNG)
+
 ## Target Code Generation
 The final phase is where the assembly code is written based on the quad table of the previous phase. This assembly code is then read the Virtual Machine I created that executes assembly.
