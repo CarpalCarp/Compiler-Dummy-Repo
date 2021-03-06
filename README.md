@@ -39,7 +39,7 @@ Dog Class does not have a constructor for the new operator
 Bark() is is not found in the Dog class
 ![GitHub Logo](SemanticErrors/barkUndefined.PNG)
 
-There is no typeOfBark in the bark class
+There is no typeOfBark() method in the Bark class
 ![GitHub Logo](SemanticErrors/NoTypeOfBark.PNG)
 ![GitHub Logo](SemanticErrors/NoTypeOfBark2.PNG)
 
