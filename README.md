@@ -27,6 +27,22 @@ Modifier is missing
 ## Semantic Analysis
 As each line is read in the kxi file during the second pass, Compiler checks for type checking, flow of control, uninitialized variables, duplicate names for variables, arrays, objects, etc. If errors are found, the Compiler stops and outputs to the console the line number the error was found and a specific message.
 
+### Semantic Analysis Examples:
+
+No Bark Object found
+![GitHub Logo](SemanticErrors/NoBarkObject.PNG)
+
+Dog Class does not have a constructor for the new operator
+![GitHub Logo](SemanticErrors/NoDogConstructor.PNG)
+![GitHub Logo](SemanticErrors/NoDogConstructor2.PNG)
+
+Bark() is is not found in the bark class
+![GitHub Logo](SemanticErrors/barkUndefined.PNG)
+
+There is no typeOfBark in the bark class
+![GitHub Logo](SemanticErrors/NoTypeOfBark.PNG)
+![GitHub Logo](SemanticErrors/NoTypeOfBark2.PNG)
+
 ## Intermediate Code Generation
 To help make the final phase easier, a quad table is created with intermediate assembly code. The quad table helps with creating labels for assembly branch statements which are used for while loops and if statements.
 
