@@ -29,7 +29,7 @@ As each line is read in the kxi file during the second pass, Compiler checks for
 
 ### Semantic Analysis Examples:
 
-No Bark Object found
+No Bark class found for the return of a Bark object
 ![GitHub Logo](SemanticErrors/NoBarkObject.PNG)
 
 Dog Class does not have a constructor for the new operator
