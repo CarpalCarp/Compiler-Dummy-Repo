@@ -51,3 +51,6 @@ Here is what the Quad table looks like for HelloWorld.kxi. You can see this is u
 
 ## Target Code Generation
 The final phase is where the assembly code is written based on the quad table of the previous phase. This assembly code is then read the Virtual Machine I created that executes assembly.
+
+Here is a screenshot of the beginning part of the assembly code the Compiler wrote. For the full file, see outputFile.asm in the repo.
+![GitHub Logo](AssemblyCodeEx.PNG)
