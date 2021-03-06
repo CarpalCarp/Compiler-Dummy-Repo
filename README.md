@@ -13,6 +13,17 @@ As each line is read in the kxi file, make sure the code follows the grammar pro
 
 Note: Switch statements are included in the grammar for error checking but they stop at this phase which means they won't get executed since there is no assembly written for them.
 
+### Syntax Analysis Examples:
+
+Class keyword is mispelled so program searches for next required thing in the grammar which is void kxi2020 main()
+![GitHub Logo](SyntaxErrors/ClassSyntaxErr.PNG)
+
+Main is missing
+![GitHub Logo](SyntaxErrors/MissingMain.PNG)
+
+Modifier is missing
+![GitHub Logo](SyntaxErrors/MissingModifier.PNG)
+
 ## Semantic Analysis
 As each line is read in the kxi file during the second pass, Compiler checks for type checking, flow of control, uninitialized variables, duplicate names for variables, arrays, objects, etc. If errors are found, the Compiler stops and outputs to the console the line number the error was found and a specific message.
 
