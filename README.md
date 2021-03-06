@@ -36,7 +36,7 @@ Dog Class does not have a constructor for the new operator
 ![GitHub Logo](SemanticErrors/NoDogConstructor.PNG)
 ![GitHub Logo](SemanticErrors/NoDogConstructor2.PNG)
 
-Bark() is is not found in the bark class
+Bark() is is not found in the Dog class
 ![GitHub Logo](SemanticErrors/barkUndefined.PNG)
 
 There is no typeOfBark in the bark class
