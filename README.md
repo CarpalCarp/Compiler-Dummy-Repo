@@ -46,7 +46,7 @@ There is no typeOfBark() method in the Bark class
 ## Intermediate Code Generation
 To help make the final phase easier, a quad table is created with intermediate assembly code. The quad table helps with creating labels for assembly branch statements which are used for while loops and if statements.
 
-Here is what the Quad table looks like:
+Here is what the Quad table looks like for HelloWorld.kxi. You can see this is used to help write better assembly code since it keeps track of labels. In the example, the screenshot only shows one label since the quad is very long. The quad table also uses id's for every type of variable/method/object etc. used in kxi.
 ![GitHub Logo](QuadTableEx.PNG)
 
 ## Target Code Generation
